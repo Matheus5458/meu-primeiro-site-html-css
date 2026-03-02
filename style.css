@@ -1,37 +1,126 @@
+/* ===== ESTILO DO BODY (página inteira) ===== */
 body {
+    margin: 0; 
+    /* Remove a margem padrão do navegador */
 
-    background-color: #140808;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 100vh; 
+    /* Faz o body ocupar 100% da altura da tela */
+
+    display: flex; 
+    /* Ativa o Flexbox para organizar os elementos */
+
+    justify-content: center; 
+    /* Centraliza horizontalmente */
+
+    align-items: center; 
+    /* Centraliza verticalmente */
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    /* Cria um fundo com degradê (ângulo + duas cores) */
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a fonte do texto */
 }
 
-.caixa {
+/* ===== CARD ===== */
+.card {
+    background: white; 
+    /* Fundo branco do card */
 
-    background-color: rgb(182, 125, 125);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+    padding: 30px; 
+    /* Espaçamento interno */
+
+    width: 280px; 
+    /* Largura fixa do card */
+
+    border-radius: 20px; 
+    /* Bordas arredondadas */
+
+    text-align: center; 
+    /* Centraliza o texto dentro do card */
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    /* Sombra:
+       0 = eixo horizontal
+       15px = eixo vertical
+       30px = desfoque
+       rgba = cor com transparência */
 }
 
+/* ===== IMAGEM ===== */
+.imagem {
+    width: 120px; 
+    /* Largura da imagem */
+
+    height: 120px; 
+    /* Altura da imagem */
+
+    border-radius: 50%; 
+    /* Deixa a imagem redonda */
+
+    object-fit: cover; 
+    /* Mantém proporção sem distorcer */
+
+    margin-bottom: 15px; 
+    /* Espaço abaixo da imagem */
+}
+
+/* ===== TÍTULO ===== */
 h1 {
-    color: #000000;
+    margin: 10px 0 5px;
+    /* Espaçamento:
+       10px topo
+       0 direita
+       5px embaixo */
 }
 
-ul {
-    list-style-type: none; /* Remove as bolinhas pretas */
-    padding: 0;            /* Remove o espaço que as bolinhas ocupavam */
-    margin-top: 20px;      /* Dá uma distância do parágrafo de cima */
+/* ===== PARÁGRAFO ===== */
+p {
+    color: gray; 
+    /* Cor do texto */
+
+    font-size: 14px; 
+    /* Tamanho da fonte */
+
+    margin-bottom: 20px; 
+    /* Espaço abaixo do texto */
 }
 
-li {
-    background-color: #f8f9fa; /* Um cinza bem clarinho no fundo de cada item */
-    margin-bottom: 10px;       /* Espaço entre um item e outro */
-    padding: 10px;             /* Espaço dentro do item */
-    border-radius: 8px;        /* Deixa os itens arredondados */
-    color: #333;               /* Cor do texto um pouco mais suave */
+/* ===== BOTÃO ===== */
+button {
+    width: 100%; 
+    /* Ocupa toda largura do card */
+
+    padding: 10px; 
+    /* Espaçamento interno */
+
+    border: none; 
+    /* Remove borda padrão */
+
+    border-radius: 10px; 
+    /* Bordas arredondadas */
+
+    background: #2a5298; 
+    /* Cor de fundo */
+
+    color: white; 
+    /* Cor do texto */
+
+    font-weight: bold; 
+    /* Texto em negrito */
+
+    cursor: pointer; 
+    /* Cursor vira mãozinha */
+
+    transition: 0.3s ease; 
+    /* Anima mudanças suaves */
+}
+
+/* ===== EFEITO QUANDO PASSA O MOUSE ===== */
+button:hover {
+    transform: scale(1.05);
+    /* Faz o botão crescer levemente */
+
+    background: #1e3c72;
+    /* Muda a cor quando passa o mouse */
 }
