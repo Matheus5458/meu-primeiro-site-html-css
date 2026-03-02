@@ -1,6 +1,6 @@
 body {
 
-    background-color: #0051ca;
+    background-color: #140808;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
 
 .caixa {
 
-    background-color: white;
+    background-color: rgb(182, 125, 125);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -19,5 +19,19 @@ body {
 }
 
 h1 {
-    color: #007bff;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none; /* Remove as bolinhas pretas */
+    padding: 0;            /* Remove o espaço que as bolinhas ocupavam */
+    margin-top: 20px;      /* Dá uma distância do parágrafo de cima */
+}
+
+li {
+    background-color: #f8f9fa; /* Um cinza bem clarinho no fundo de cada item */
+    margin-bottom: 10px;       /* Espaço entre um item e outro */
+    padding: 10px;             /* Espaço dentro do item */
+    border-radius: 8px;        /* Deixa os itens arredondados */
+    color: #333;               /* Cor do texto um pouco mais suave */
 }
